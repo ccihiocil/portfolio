@@ -21,9 +21,26 @@
     <!-- jQuery and fancybox files -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
+    <!--filter-isotope-->
+    <script src="js/isotope.pkgd.min.js"></script>
 
-
-    <script src="js/gallery.js"></script>
+    <script>
+        $('.gallery-pic').isotope({
+            itemSelector:'.item',
+            layoutMode: 'fitRow'
+        });
+        
+        $('li-group ul li').click(function() {
+            $('.li-group ul li').removeClass('active');
+            $(this).addClass('active');
+            
+            var selector = $(this).attr('data-filter');
+            $('.gallery-pic').isotope({
+                filter: selector
+            });
+            return false;
+        })
+    </script>
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css" />
@@ -64,72 +81,80 @@
 
             <div class="row">
 
-                <!-- The standard way of using fancybox is with a number of thumbnail images that link to larger images:-->
-                <div class="gallery-pic">
+                <p class="imglist">
 
-                    <!-- wildlife -->
-                    <a href="images/wildlife/blue_belly_lizard.jpg" data-fancybox="Blue Belly" data-caption="Caption #1">
-                        <img src="thumb/wildlife/blue_belly_lizard.jpg" alt="Blue Belly">
-                    </a>
+                    <!-- The standard way of using fancybox is with a number of thumbnail images that link to larger images:-->
+                    <div class="gallery-pic">
+                        <!-- wildlife -->
+                        <div class="item wildlife">
+                            <a href="images/wildlife/blue_belly_lizard.jpg" data-fancybox="Blue Belly" data-caption="Caption #1">
+                                <img src="thumb/wildlife/blue_belly_lizard.jpg" alt="Blue Belly" /></a></div>
 
-                    <a href="images/wildlife/chuckwalla.jpg" data-fancybox="gallery" data-caption="Chuckwalla">
-                        <img src="thumb/wildlife/lizard_chuckwalla.jpg" alt="Chuckwalla">
-                    </a>
+                        <div class="item wildlife">
+                            <a href="images/wildlife/chuckwalla.jpg" data-fancybox="gallery" data-caption="Chuckwalla"><img
+                                    src="thumb/wildlife/lizard_chuckwalla.jpg" alt="Chuckwalla" /></a>
+                        </div>
+                        <div class="item wildlife">
+                            <a href="images/wildlife/jack_rabbit.jpg" data-fancybox="gallery" data-caption="Jack Rabbit">
+                                <img src="thumb/wildlife/jack_rabbit_mt_whitney.jpg" alt="Jack Rabbit" /></a>
+                        </div>
+                        <div class="item wildlife">
+                            <a href="images/wildlife/mountain_lion.jpg" data-fancybox="gallery" data-caption="As Tired as a Mountain Lion">
+                                <img src="thumb/wildlife/mountain_lion.jpg" alt="Mountain Lion" /></a>
+                        </div>
 
-                    <a href="images/wildlife/jack_rabbit.jpg" data-fancybox="gallery" data-caption="Jack Rabbit">
-                        <img src="thumb/wildlife/jack_rabbit_mt_whitney.jpg" alt="Jack Rabbit">
-                    </a>
+                        <div class="item wildlife">
+                            <a href="images/wildlife/sunset_owl.jpg" data-fancybox="gallery" data-caption="Burrowing Owl">
+                                <img src="thumb/wildlife/owl_sunset.jpg" alt="Burrowing Owl" /></a>
+                        </div>
 
-                    <a href="images/wildlife/mountain_lion.jpg" data-fancybox="gallery" data-caption="As Tired as a Mountain Lion">
-                        <img src="thumb/wildlife/mountain_lion.jpg" alt="Mountain Lion">
-                    </a>
+                        <div class="item wildlife">
+                            <a href="images/wildlife/woodpecker.jpg" data-fancybox="gallery" data-caption="Woodpecker say Hello">
+                                <img src="thumb/wildlife/woodpecker.jpg" alt="Woodpecker" /></a></div>
 
-                    <a href="images/wildlife/sunset_owl.jpg" data-fancybox="gallery" data-caption="Burrowing Owl">
-                        <img src="thumb/wildlife/owl_sunset.jpg" alt="Burrowing Owl">
-                    </a>
+                        <div class="landscape">
+                            <!-- landscape-->
+                            <a href="images/landscape/catalina_sialnd_express_snset.jpg" data-fancybox="gallery"
+                                data-caption="Catalina Express">
+                                <img src="thumb/landscape/catalina_island_sunset.jpg" alt="Catalina Express" /></a></div>
 
-                    <a href="images/wildlife/woodpecker.jpg" data-fancybox="gallery" data-caption="Woodpecker say Hello">
-                        <img src="thumb/wildlife/woodpecker.jpg" alt="Woodpecker">
-                    </a>
+                        <div class="landscape">
+                            <a href="images/landscape/catalina_island_dinner.jpg" data-fancybox="gallery" data-caption="Lovers at Catalina Island">
+                                <img src="thumb/landscape/catalina_island_dinner.jpg" alt="Lovers at Catalina Island" /></a></div>
 
-                    <!-- landscape-->
-                    <a href="images/landscape/catalina_sialnd_express_snset.jpg" data-fancybox="gallery" data-caption="Catalina Express">
-                        <img src="thumb/landscape/catalina_island_sunset.jpg" alt="Catalina Express">
-                    </a>
+                        <div class="landscape">
 
-                    <a href="images/landscape/catalina_island_dinner.jpg" data-fancybox="gallery" data-caption="Lovers at Catalina Island">
-                        <img src="thumb/landscape/catalina_island_dinner.jpg" alt="Lovers at Catalina Island">
-                    </a>
+                            <a href="images/landscape/fog_morning_forest.jpg" data-fancybox="gallery" data-caption="Morning Forest">
+                                <img src="thumb/landscape/morning_fog.jpg" alt="Morning Forest" /></a></div>
 
-                    <a href="images/landscape/fog_morning_forest.jpg" data-fancybox="gallery" data-caption="Morning Forest">
-                        <img src="thumb/landscape/morning_fog.jpg" alt="Morning Forest">
-                    </a>
+                        <div class="landscape">
+                            <a href="images/landscape/forest_trees.jpg" data-fancybox="gallery" data-caption="Tangling trees">
+                                <img src="thumb/landscape/forest_trees.jpg" alt="the Music from the Forest" /></a></div>
 
-                    <a href="images/landscape/forest_trees.jpg" data-fancybox="gallery" data-caption="Tangling trees">
-                        <img src="thumb/landscape/forest_trees.jpg" alt="the Music from the Forest">
-                    </a>
+                        <div class="landscape">
+                            <a href="images/landscape/horse_sunset.jpg" data-fancybox="gallery" data-caption="Mono Lake Wild Horses">
+                                <img src="thumb/landscape/horse_sunset_monolake.jpg" alt="Mono Lake Wild Horses" /></a></div>
 
-                    <a href="images/landscape/horse_sunset.jpg" data-fancybox="gallery" data-caption="Mono Lake Wild Horses">
-                        <img src="thumb/landscape/horse_sunset_monolake.jpg" alt="Mono Lake Wild Horses">
-                    </a>
+                        <div class="landscape">
+                            <a href="images/landscape/majova_deset.jpg" data-fancybox="gallery" data-caption="Mojave Desert">
+                                <img src="thumb/landscape/mojave_Desert.jpg" alt="Mojave Desert" /></a></div>
 
-                    <a href="images/landscape/majova_deset.jpg" data-fancybox="gallery" data-caption="Mojave Desert">
-                        <img src="thumb/landscape/mojave_Desert.jpg" alt="Mojave Desert">
-                    </a>
+                        <div class="landscape">
+                            <a href="images/landscape/salton_sea.jpg" data-fancybox="gallery" data-caption="Salton Sea">
+                                <img src="thumb/landscape/salton_sea_sunset.jpg" alt="Salton Sea" /></a></div>
 
-                    <a href="images/landscape/salton_sea.jpg" data-fancybox="gallery" data-caption="Salton Sea">
-                        <img src="thumb/landscape/salton_sea_sunset.jpg" alt="Salton Sea">
-                    </a>
+                        <div class="landscape">
+                            <a href="images/landscape/sandiego_sunset.jpg" data-fancybox="gallery" data-caption="Sunset at Torrey Pine Beach">
+                                <img src="thumb/landscape/san-diego-sunset.jpg" alt="Sunset at Torrey Pine Beach" /></a></div>
+                    </div>
 
-                    <a href="images/landscape/sandiego_sunset.jpg" data-fancybox="gallery" data-caption="Sunset at Torrey Pine Beach">
-                        <img src="thumb/landscape/san-diego-sunset.jpg" alt="Sunset at Torrey Pine Beach" />
-                    </a>
+                </p>
 
-                </div>
 
             </div>
 
         </div>
+
 
     </div>
     <!--footer?-->
