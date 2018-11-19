@@ -21,6 +21,7 @@
     <!-- jQuery and fancybox files -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/gallery.js"></script>
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
@@ -62,78 +63,181 @@
             <div class="row">
 
                 <!-- The standard way of using fancybox is with a number of thumbnail images that link to larger images:-->
-                <div class="gallery-pic">
 
-                    <!-- wildlife -->
-                    <a href="images/wildlife/blue_belly_lizard.jpg" data-fancybox="Blue Belly" data-caption="Caption #1">
-                        <img src="thumb/wildlife/blue_belly_lizard.jpg" alt="Blue Belly">
-                    </a>
+                <!-- wildlife -->
+                <figure class="col-4@sm picture-item" data-groups='["wildlife"]' data-date-created="2018-11-19"
+                    data-title="blue belly">
+                    <div class="aspect aspect--16x9">
+                        <div class="aspect__inner">
+                            <a href="images/wildlife/blue_belly_lizard.jpg" data-fancybox="Blue Belly" data-caption="Blue Belly">
+                                <img src="thumb/wildlife/blue_belly_lizard.jpg" alt="Blue Belly">
+                            </a>
+                        </div>
+                        <!-- <figcaption>caption</figcaption> -->
+                    </div>
+                </figure>
 
-                    <a href="images/wildlife/chuckwalla.jpg" data-fancybox="gallery" data-caption="Chuckwalla">
-                        <img src="thumb/wildlife/lizard_chuckwalla.jpg" alt="Chuckwalla">
-                    </a>
+                <figure class="col-4@sm picture-item" data-groups='["wildlife"]' data-date-created="2018-11-19"
+                    data-title="Chuckwalla">
+                    <div class="aspect aspect--16x9">
+                        <div class="aspect__inner">
+                            <a href="images/wildlife/chuckwalla.jpg" data-fancybox="gallery" data-caption="Chuckwalla">
+                                <img src="thumb/wildlife/lizard_chuckwalla.jpg" alt="Chuckwalla">
+                            </a>
+                        </div>
+                        <!-- <figcaption>caption</figcaption> -->
+                    </div>
+                </figure>
 
-                    <a href="images/wildlife/jack_rabbit.jpg" data-fancybox="gallery" data-caption="Jack Rabbit">
-                        <img src="thumb/wildlife/jack_rabbit_mt_whitney.jpg" alt="Jack Rabbit">
-                    </a>
+                <figure class="col-4@sm picture-item" data-groups='["wildlife"]' data-date-created="2018-11-19"
+                    data-title="Jack Rabbi">
+                    <div class="aspect aspect--16x9">
+                        <div class="aspect__inner">
+                            <a href="images/wildlife/jack_rabbit.jpg" data-fancybox="gallery" data-caption="Jack Rabbit">
+                                <img src="thumb/wildlife/jack_rabbit_mt_whitney.jpg" alt="Jack Rabbit">
+                            </a>
+                        </div>
+                        <!-- <figcaption>caption</figcaption> -->
+                    </div>
+                </figure>
 
-                    <a href="images/wildlife/mountain_lion.jpg" data-fancybox="gallery" data-caption="As Tired as a Mountain Lion">
-                        <img src="thumb/wildlife/mountain_lion.jpg" alt="Mountain Lion">
-                    </a>
+                <figure class="col-4@sm picture-item" data-groups='["wildlife"]' data-date-created="2018-11-19"
+                    data-title="As Tired as a Mountain Lion">
+                    <div class="aspect aspect--16x9">
+                        <div class="aspect__inner">
+                            <a href="images/wildlife/mountain_lion.jpg" data-fancybox="gallery" data-caption="As Tired as a Mountain Lion">
+                                <img src="thumb/wildlife/mountain_lion.jpg" alt="Mountain Lion">
+                            </a>
+                        </div>
+                        <!-- <figcaption>caption</figcaption> -->
+                    </div>
+                </figure>
 
-                    <a href="images/wildlife/sunset_owl.jpg" data-fancybox="gallery" data-caption="Burrowing Owl">
-                        <img src="thumb/wildlife/owl_sunset.jpg" alt="Burrowing Owl">
-                    </a>
+                <figure class="col-4@sm picture-item" data-groups='["wildlife"]' data-date-created="2018-11-19"
+                    data-title="Burrowing Owl">
+                    <div class="aspect aspect--16x9">
+                        <div class="aspect__inner">
+                            <a href="images/wildlife/sunset_owl.jpg" data-fancybox="gallery" data-caption="Burrowing Owl">
+                                <img src="thumb/wildlife/owl_sunset.jpg" alt="Burrowing Owl">
+                            </a>
+                        </div>
+                        <!-- <figcaption>caption</figcaption> -->
+                    </div>
+                </figure>
 
-                    <a href="images/wildlife/woodpecker.jpg" data-fancybox="gallery" data-caption="Woodpecker say Hello">
-                        <img src="thumb/wildlife/woodpecker.jpg" alt="Woodpecker">
-                    </a>
-                    <!-- End wildlife -->
-
-
-                    <!-- landscape-->
-                    <a href="images/landscape/catalina_sialnd_express_snset.jpg" data-fancybox="gallery" data-caption="Catalina Express">
-                        <img src="thumb/landscape/catalina_island_sunset.jpg" alt="Catalina Express">
-                    </a>
-
-
-                    <a href="images/landscape/catalina_island_dinner.jpg" data-fancybox="gallery" data-caption="Lovers at Catalina Island">
-                        <img src="thumb/landscape/catalina_island_dinner.jpg" alt="Lovers at Catalina Island">
-                    </a>
-
-
-
-                    <a href="images/landscape/fog_morning_forest.jpg" data-fancybox="gallery" data-caption="Morning Forest">
-                        <img src="thumb/landscape/morning_fog.jpg" alt="Morning Forest">
-                    </a>
-
-
-                    <a href="images/landscape/forest_trees.jpg" data-fancybox="gallery" data-caption="Tangling trees">
-                        <img src="thumb/landscape/forest_trees.jpg" alt="the Music from the Forest">
-                    </a>
-
-
-                    <a href="images/landscape/horse_sunset.jpg" data-fancybox="gallery" data-caption="Mono Lake Wild Horses">
-                        <img src="thumb/landscape/horse_sunset_monolake.jpg" alt="Mono Lake Wild Horses">
-                    </a>
-
-
-                    <a href="images/landscape/majova_deset.jpg" data-fancybox="gallery" data-caption="Mojave Desert">
-                        <img src="thumb/landscape/mojave_Desert.jpg" alt="Mojave Desert">
-                    </a>
-
-
-                    <a href="images/landscape/salton_sea.jpg" data-fancybox="gallery" data-caption="Salton Sea">
-                        <img src="thumb/landscape/salton_sea_sunset.jpg" alt="Salton Sea">
-                    </a>
+                <figure class="col-4@sm picture-item" data-groups='["wildlife"]' data-date-created="2018-11-19"
+                    data-title="Woodpecker say Hello">
+                    <div class="aspect aspect--16x9">
+                        <div class="aspect__inner">
+                            <a href="images/wildlife/woodpecker.jpg" data-fancybox="gallery" data-caption="Woodpecker say Hello">
+                                <img src="thumb/wildlife/woodpecker.jpg" alt="Woodpecker">
+                            </a>
+                        </div>
+                        <!-- <figcaption>caption</figcaption> -->
+                    </div>
+                </figure>
+                <!-- End wildlife -->
 
 
-                    <a href="images/landscape/sandiego_sunset.jpg" data-fancybox="gallery" data-caption="Sunset at Torrey Pine Beach">
-                        <img src="thumb/landscape/san-diego-sunset.jpg" alt="Sunset at Torrey Pine Beach">
-                    </a>
-                    <!-- End landscape -->
+                <!-- landscape-->
+                <figure class="col-4@sm picture-item" data-groups='["landscape"]' data-date-created="2018-11-19"
+                    data-title="Catalina Express">
+                    <div class="aspect aspect--16x9">
+                        <div class="aspect__inner">
+                            <a href="images/landscape/catalina_sialnd_express_snset.jpg" data-fancybox="gallery"
+                                data-caption="Catalina Express">
+                                <img src="thumb/landscape/catalina_island_sunset.jpg" alt="Catalina Express">
+                            </a>
+                        </div>
+                        <!-- <figcaption>caption</figcaption> -->
+                    </div>
+                </figure>
 
-                </div><!-- End gallery-pic -->
+                <figure class="col-4@sm picture-item" data-groups='["landscape"]' data-date-created="2018-11-19"
+                    data-title="Lovers at Catalina Island">
+                    <div class="aspect aspect--16x9">
+                        <div class="aspect__inner">
+                            <a href="images/landscape/catalina_island_dinner.jpg" data-fancybox="gallery" data-caption="Lovers at Catalina Island">
+                                <img src="thumb/landscape/catalina_island_dinner.jpg" alt="Lovers at Catalina Island">
+                            </a>
+                        </div>
+                        <!-- <figcaption>caption</figcaption> -->
+                    </div>
+                </figure>
+
+
+                <figure class="col-4@sm picture-item" data-groups='["landscape"]' data-date-created="2018-11-19"
+                    data-title="Morning Forest">
+                    <div class="aspect aspect--16x9">
+                        <div class="aspect__inner">
+                            <a href="images/landscape/fog_morning_forest.jpg" data-fancybox="gallery" data-caption="Morning Forest">
+                                <img src="thumb/landscape/morning_fog.jpg" alt="Morning Forest">
+                            </a>
+                        </div>
+                        <!-- <figcaption>caption</figcaption> -->
+                    </div>
+                </figure>
+
+                <figure class="col-4@sm picture-item" data-groups='["landscape"]' data-date-created="2018-11-19"
+                    data-title="Tangling trees">
+                    <div class="aspect aspect--16x9">
+                        <div class="aspect__inner">
+                            <a href="images/landscape/forest_trees.jpg" data-fancybox="gallery" data-caption="Tangling trees">
+                                <img src="thumb/landscape/forest_trees.jpg" alt="the Music from the Forest">
+                            </a>
+                        </div>
+                        <!-- <figcaption>caption</figcaption> -->
+                    </div>
+                </figure>
+
+                <figure class="col-4@sm picture-item" data-groups='["landscape"]' data-date-created="2018-11-19"
+                    data-title="Mono Lake Wild Horses">
+                    <div class="aspect aspect--16x9">
+                        <div class="aspect__inner">
+                            <a href="images/landscape/horse_sunset.jpg" data-fancybox="gallery" data-caption="Mono Lake Wild Horses">
+                                <img src="thumb/landscape/horse_sunset_monolake.jpg" alt="Mono Lake Wild Horses">
+                            </a>
+                        </div>
+                        <!-- <figcaption>caption</figcaption> -->
+                    </div>
+                </figure>
+
+                <figure class="col-4@sm picture-item" data-groups='["landscape"]' data-date-created="2018-11-19"
+                    data-title="Mojave Desert">
+                    <div class="aspect aspect--16x9">
+                        <div class="aspect__inner">
+                            <a href="images/landscape/majova_deset.jpg" data-fancybox="gallery" data-caption="Mojave Desert">
+                                <img src="thumb/landscape/mojave_Desert.jpg" alt="Mojave Desert">
+                            </a>
+                        </div>
+                        <!-- <figcaption>caption</figcaption> -->
+                    </div>
+                </figure>
+
+                <figure class="col-4@sm picture-item" data-groups='["landscape"]' data-date-created="2018-11-19"
+                    data-title="Salton Sea">
+                    <div class="aspect aspect--16x9">
+                        <div class="aspect__inner">
+                            <a href="images/landscape/salton_sea.jpg" data-fancybox="gallery" data-caption="Salton Sea">
+                                <img src="thumb/landscape/salton_sea_sunset.jpg" alt="Salton Sea">
+                            </a>
+                        </div>
+                        <!-- <figcaption>caption</figcaption> -->
+                    </div>
+                </figure>
+
+                <figure class="col-4@sm picture-item" data-groups='["landscape"]' data-date-created="2018-11-19"
+                    data-title="Sunset at Torrey Pine Beach">
+                    <div class="aspect aspect--16x9">
+                        <div class="aspect__inner">
+                            <a href="images/landscape/sandiego_sunset.jpg" data-fancybox="gallery" data-caption="Sunset at Torrey Pine Beach">
+                                <img src="thumb/landscape/san-diego-sunset.jpg" alt="Sunset at Torrey Pine Beach">
+                            </a>
+                        </div>
+                        <!-- <figcaption>caption</figcaption> -->
+                    </div>
+                </figure>
+                <!-- End landscape -->
 
             </div><!-- End gallery-item -->
 
