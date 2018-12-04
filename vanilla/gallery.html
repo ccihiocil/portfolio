@@ -9,10 +9,15 @@
         crossorigin="anonymous">
     <!--google-font-->
     <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great%7CLato%7CLobster%7CPlayfair+Display" rel="stylesheet">
+
     <!--CSS-->
     <link href="gallery.css" rel="stylesheet">
+
     <!-- gallery display -->
     <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+
+    <!--social media icon css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Gallery</title>
 </head>
@@ -23,6 +28,8 @@
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="js/gallery.js"></script>
+    <!--social media js -->
+     <script src="js\social_media.js"></script> 
 
     <div class="wrapper">
         <!--Header | navigation-->
@@ -44,6 +51,23 @@
                 </div>
 
             </nav>
+        </div>
+
+        <div id="social_media">
+                <ul>
+                    <!-- google-->
+                    <li><a href="#" class="fa fa-google"></a></li>
+                    <!--linkedin-->
+                    <li><a href="#" class="fa fa-linkedin"></a></li>
+                    <!--facebook-->
+                    <li><a href="https://www.facebook.com/mier1993" class="fa fa-facebook"></a></li>
+                    <!--instagram-->
+                    <li><a href="https://www.instagram.com/miercat523/" class="fa fa-instagram"></a></li>
+                </ul>
+
+                <!-- scroll to top button-->
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+            </div>
         </div>
 
         <!--Gallery Display-->

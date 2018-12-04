@@ -21,55 +21,6 @@ p {
     background: indianred;
 }
 
-/* ================================= */
-/*default for all sites*/
-
-.wrapper {
-    width: 95%;
-    margin: auto;
-    max-width: 1600px;
-}
-
-/* header: Title and Navigation */
-header {
-    float: left;
-    margin-top: 2%;
-    margin-left: 5%;
-}
-
-nav.sitenav ul {
-    list-style: none;
-    text-align: center;
-    float: right;
-    padding-bottom: 3%;
-    margin-right: 5%;
-}
-
-nav.sitenav li {
-    display: inline-block;
-    width: 8em;
-    text-align: center;
-    font-family: 'Playfair Display', serif;
-}
-
-nav.sitenav a {
-    display: block;
-    font-weight: bold;
-}
-
-nav.sitenav a:link,
-nav.sitenav a:visited,
-nav.sitenav a:hover,
-nav.sitenav a:active {
-    color: ghostwhite;
-    text-decoration: none;
-    border-bottom: thin solid transparent;
-}
-
-nav.sitenav a:hover {
-    border-bottom: thin solid whitesmoke;
-}
-
 /*Contact form*/
 h1,
 h2,
@@ -104,38 +55,157 @@ input[type="text"],
     font-weight: lighter;
 }
 
-/*footer*/
-footer {
-    clear: both;
-    color: whitesmoke;
-    padding: 1em 2em;
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-    text-align: left;
-    margin: 2% 2% 3% 3%;
+/* ================================= */
+/*default for all sites*/
+
+#logoMC {
+    width: 28em;
+    float: left;
 }
+
+.wrapper {
+    width: 93%;
+    margin-right: 6%;
+    margin-left: 1%;
+    max-width: 1600px;
+}
+
+nav.sitenav ul {
+    list-style: none;
+    text-align: center;
+    float: right;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-right: 5%;
+    font-size: 1.25em;
+}
+
+nav.sitenav li {
+    display: inline-block;
+    width: 8em;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+nav.sitenav a {
+    display: block;
+    font-weight: bold;
+}
+
+nav.sitenav a:link,
+nav.sitenav a:visited,
+nav.sitenav a:hover,
+nav.sitenav a:active {
+    color: ghostwhite;
+    text-decoration: none;
+    border-bottom: thin solid transparent;
+}
+
+nav.sitenav a:hover {
+    border-bottom: thin solid whitesmoke;
+}
+
+h1,
+h2,
+h3,
+form,
+body {
+    text-align: center;
+}
+
 
 /* Typography */
 h1 {
     text-align: center;
     font-family: 'Fredericka the Great', cursive;
     font-size: 3em;
+    line-height: 1.05em;
     color: whitesmoke;
 }
 
-h2,
+h2 {
+    color: whitesmoke;
+    font-family: 'Lobster', cursive;
+    font-size: 2.25em;
+    line-height: 1.25em;
+    font-weight: inherit;
+}
+
 h3 {
     color: whitesmoke;
     font-family: 'Lobster', cursive;
-    font-size: 2em;
+    font-size: 1.75em;
+    line-height: 1.25em;
     font-weight: inherit;
 }
 
 body {
-    font-size: 1.2em;
+    font-size: 1em;
+    line-height: 1.375em;
     font-weight: normal;
     font-family: Cambria, serif;
-    background: url("./image/background.jpg") repeat;
+    background: #000;
+    /* background: url("./image/background.jpg") repeat; */
     color: ghostwhite;
+}
+
+blockquote {
+    font-size: 1.5em;
+    line-height: 1.45833333em;
+}
+
+#filter-buttons button {
+    border-radius: 6px;
+    min-width: 8%;
+    font-size: 24px;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-top: 6px;
+}
+
+/*social media footer*/
+#social_media {
+    float: right;
+    position: fixed;
+    top: 10%;
+    right: 2%;
+    z-index: 99;
+    font-size: 1.5em;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    padding: auto;
+    border-radius: 4px;
+}
+
+#social_media li {
+    line-height: 2em;
+}
+
+ul,
+li .container {
+    list-style: none;
+}
+
+/*scroll to top button*/
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    z-index: 99;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    background-color:  rgba(255, 255, 255, 0.931);;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#myBtn:hover {
+    opacity: 0.7;
 }

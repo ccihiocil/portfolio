@@ -6,6 +6,11 @@
     position: static;
 }
 
+.gallery {
+    width: 96%;
+    margin: auto 2% auto 2%;
+}
+
 .gallery img {
     padding: 2%;
     margin-top: 0;
@@ -75,8 +80,9 @@ h2#clear {
 /*default for all sites*/
 
 .wrapper {
-    width: 95%;
-    margin: auto;
+    width: 93%;
+    margin-right: 6%;
+    margin-left: 1%;
     max-width: 1600px;
 }
 
@@ -121,7 +127,6 @@ nav.sitenav a:hover {
     border-bottom: thin solid whitesmoke;
 }
 
-/*Contact form*/
 h1,
 h2,
 h3,
@@ -130,19 +135,6 @@ body {
     text-align: center;
 }
 
-/*footer*/
-/*
-footer {
-    clear: both;
-    color: whitesmoke;
-    padding: 1em 2em;
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-    text-align: left;
-    margin: 2% 2% 3% 3%;
-}
-*/
 
 /* Typography */
 h1 {
@@ -175,4 +167,47 @@ body {
     font-size: 24px;
     margin-left: 12px;
     margin-right: 12px;
+    margin-top: 6px;
+}
+
+/*social media footer*/
+#social_media {
+    float: right;
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    z-index: 99;
+    font-size: 1.5em;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+ul,
+li .container {
+    list-style: none;
+}
+
+/*scroll to top button*/
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: gray;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#myBtn:hover {
+    opacity: 0.7;
 }

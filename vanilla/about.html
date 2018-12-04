@@ -10,6 +10,16 @@
     <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great%7CLato%7CLobster%7CPlayfair+Display" rel="stylesheet">
     <link href="about.css" rel="stylesheet">
 
+    <!--social media icon css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- jQuery and fancybox files -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <!--social media js -->
+     <script src="js\social_media.js"></script> 
+
     <title>MierCat</title>
 </head>
 
@@ -43,29 +53,24 @@
             </ul>
         </aside>
         <article>
-            <h2>Who Am I</h2>
             <section>
-                <h3>Call from the Wilderness</h3>
-                <p>Growing up in a big city in China, the wilderness in the United
-                    States has attracted me. Unlike the majority of the photographers, I have zero backgrounds in arts, including drawing, painting, and filming. However, I fell in love with photography as I travel. Initially, I traveled from the west coast
-                    to the east coast because I want to see myself the real America. I carefully selected the colleges and universities that I was going to attend based on its location. I chose Seattle as my first launch in the U.S because I love the Pacific
-                    ocean. I later transfer to the University of Virginia because it locates at the mid-Atlantic where I can easily plan the road trips to the whole east coast. I squeezed all my spare time traveling to the North-est state: Maine and to the
-                    South-est, Florida. What’s more, during my graduation trip, I had a round-trip cross-nation road trip starting from Charlottesville, VA to Santa Monica, CA, and back, covering many states in the Central and Southern America. </p>
-                <img alt="intro" src="image/saltnsea2.jpg" style="float: right;" />
+                <h3>Greeting from MierCat</h3>
+                <p>I am Mier Chen, a data scientist and photographer, focusing on research and creating imagery that traced the value and beauty of natural wonders. I recorded the damage caused by human disregard. The ethereal landscape and the playful wildlife captured in my photographs aim to remind us of the pure air, soil, water, and land that we are losing. 
+                <p>May my photographs brings you back to the ideals of Eden. </p></p>
+                
                 <section>
                     <h3>
                         My Love towards the Nature
                     </h3>
-                    <p>These journeys change me completely. I learn to admire, respect and importance of protection. I adore the natural beauty such as the rocky mountains, the Mojave desert, the Pacific oceans, and the Great Salt Lake. What I have shot are merely
-                        following the wonders of nature and recorded some of the millions of its charms. For so long, the education I received told me that human could defeat nature. However, all I saw was that our ignorance and arrogance has been killing ourselves
-                        slowly and steadily. Even in the breathtaking Colorado where the water seems to be crystal clear, I learned that the fish in the lake is harmful to our health since the water has been polluted by the mining industry starting decades ago.</p>
+                    <p>I fell in love with photography as I travel across the nation aiming to see myself the real America. In these six years of overseas studying, I have lived in Washington, Virginia, and California, and visited over 40 states.</p>
+
+                    <p>I fell in love with photography as I travel across the nation aiming to see myself the real America. In these six years of overseas studying, I have lived in Washington, Virginia, and California, and visited over 40 states.</p>
+                    
                 </section>
 
                 <section>
                     <h3>Photography Style</h3>
-                    <p>Therefore, my photography styles also divided into two very distinct forms: the dreamy, ethereal and colorful landscape and wildlife photos; and the starker, dynamic and black-and-white images, one for enjoying, and the other for the warning.
-                        Many people have forgotten what the land, the ocean, the lake, and the night sky should have looked like. They become used to living in the polluted environment and neglect the reality that the environmental issues are longer severe but
-                        deadly. I wish that the peaceful images of nature can remind them of the original picture of nature, and the black-and-white photography can urge them to take actions now.
+                    <p>Therefore, my photography styles also divided into two very distinct forms: the dreamy, ethereal and colorful landscape and wildlife photos; and the starker, dynamic and black-and-white images. 
                     </p>
                 </section>
             </section>
@@ -77,24 +82,37 @@
                 </p>
             </section>
         </article>
+
         <aside class="featureGallery">
             <h3>Feature</h3>
             <ul id="featurePhotos">
-                <li><img alt="saltonsea1" src="image/about_feature/saltnsea3.jpg" /></li>
-                <li><img alt="Avalon_0004" src="image/about_feature/Avalon_0005.jpg" /></li>
-                <li><img alt="Avalon_0013" src="image/about_feature/Avalon_0012.jpg" /></li>
-                <li><img alt="Avalon_0061" src="image/about_feature/sanDiego.jpg" /></li>
-                <li><img alt="wildlife2" src="image/about_feature/wildlife2.jpg" /></li>
-                <li><img alt="wildlife3" src="image/about_feature/wildlife3.jpg" /></li>
-                <li><img alt="sanDiego" src="image/about_feature/sanDiego4.jpg" /></li>
-                <li><img alt="Avalon_0016" src="image/about_feature/Avalon_0004.jpg" /></li>
+                <a class="gallery-item landscape sunset" href="images/landscape/TorreyPines_sunset.jpg" data-fancybox="gallery"
+                    data-caption="the Clouds on Fire">
+                    <img src="thumb/landscape/sunset_torreyPines.jpg" alt="cloudsonFire">
+                </a>
+
+                <a class="gallery-item landscape" href="images/landscape/wildflower_canyon_wyoming.jpg" data-fancybox="gallery"
+                    data-caption="wildflower blossom">
+                    <img src="thumb/landscape/wildflower.jpg" alt="wildflower">
+                </a>
+
+                <a class="gallery-item wildlife sunset" href="images/wildlife/sunset_owl.jpg" data-fancybox="gallery"
+                    data-caption="Burrowing Owl">
+                    <img src="thumb/wildlife/owl_sunset.jpg" alt="Burrowing Owl">
+                </a>
+
+                <a class="gallery-item wildlife" href="images/wildlife/woodpecker.jpg" data-fancybox="gallery"
+                    data-caption="Woodpecker say Hello">
+                    <img src="thumb/wildlife/woodpecker.jpg" alt="Woodpecker">
+                </a>
+
+                <a class="gallery-item landscape" href="images/landscape/yellowstone_lake_spring.jpg" data-fancybox="gallery"
+                    data-caption="Yellowstone West Thumb Geyser Basin">
+                    <img src="thumb/landscape/yellowstone_lake_west_thumb.jpg" alt="Yellowstone West Thumb Geyser Basin">
+                </a>
             </ul>
         </aside>
         <footer>
-            <ul>
-                <li>MierCat</li>
-                <li>Follow Me</li>
-            </ul>
             <ul>
                 <li><a href="https://www.facebook.com/mier1993">Facebook</a></li>
                 <li><a href="https://www.instagram.com/miercat523/">Instagram</a></li>
