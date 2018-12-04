@@ -28,4 +28,10 @@ $(document).ready(() => {
     });
   });
 
+  $('#sunset-button').click(() => {
+    $grid.isotope({
+      filter: '.sunset'
+    });
+  });
+
 });
