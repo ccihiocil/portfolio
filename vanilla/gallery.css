@@ -79,18 +79,17 @@ h2#clear {
 /* ================================= */
 /*default for all sites*/
 
+#logoMC {
+    width: 28em;
+    float: left;
+    margin: auto;
+}
+
 .wrapper {
     width: 93%;
     margin-right: 6%;
     margin-left: 1%;
     max-width: 1600px;
-}
-
-/* header: Title and Navigation */
-header {
-    float: left;
-    margin-top: 2%;
-    margin-left: 5%;
 }
 
 nav.sitenav ul {
@@ -100,6 +99,7 @@ nav.sitenav ul {
     padding-top: 3%;
     padding-bottom: 3%;
     margin-right: 5%;
+    font-size: 1.25em;
 }
 
 nav.sitenav li {
@@ -141,24 +141,39 @@ h1 {
     text-align: center;
     font-family: 'Fredericka the Great', cursive;
     font-size: 3em;
+    line-height: 1.05em;
     color: whitesmoke;
 }
 
-h2,
+h2 {
+    color: whitesmoke;
+    font-family: 'Lobster', cursive;
+    font-size: 2.25em;
+    line-height: 1.25em;
+    font-weight: inherit;
+}
+
 h3 {
     color: whitesmoke;
     font-family: 'Lobster', cursive;
-    font-size: 2em;
+    font-size: 1.75em;
+    line-height: 1.25em;
     font-weight: inherit;
 }
 
 body {
-    font-size: 1.2em;
+    font-size: 1em;
+    line-height: 1.375em;
     font-weight: normal;
     font-family: Cambria, serif;
     background: #000;
     /* background: url("./image/background.jpg") repeat; */
     color: ghostwhite;
+}
+
+blockquote {
+    font-size: 1.5em;
+    line-height: 1.45833333em;
 }
 
 #filter-buttons button {
@@ -174,16 +189,20 @@ body {
 #social_media {
     float: right;
     position: fixed;
-    bottom: 100px;
-    right: 20px;
+    top: 10%;
+    right: 2%;
     z-index: 99;
     font-size: 1.5em;
     border: none;
     outline: none;
     color: white;
     cursor: pointer;
-    padding: 15px;
+    padding: auto;
     border-radius: 4px;
+}
+
+#social_media li {
+    line-height: 2em;
 }
 
 ul,
@@ -195,14 +214,15 @@ li .container {
 #myBtn {
     display: none;
     position: fixed;
-    bottom: 20px;
-    right: 30px;
+    bottom: 2%;
+    right: 2%;
     z-index: 99;
-    font-size: 18px;
+    font-size: 1em;
+    font-weight: bold;
     border: none;
     outline: none;
-    background-color: white;
-    color: gray;
+    background-color:  rgba(255, 255, 255, 0.931);;
+    color: white;
     cursor: pointer;
     padding: 15px;
     border-radius: 4px;

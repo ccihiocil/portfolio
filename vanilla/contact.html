@@ -10,28 +10,51 @@
     <!--google-font-->
     <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great%7CLato%7CLobster%7CPlayfair+Display" rel="stylesheet">
     <title>Contact</title>
-    <link href="contact.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
     <!--social media js -->
      <script src="js\social_media.js"></script> 
 
 </head>
 
-
 <body>
     <div class="wrapper">
-        <!--navigation-->
-        <header>
-            <h1>MierCat Nature Photography</h1>
-        </header>
 
-        <nav class="sitenav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="gallery.html">Galleries</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <img src="images\logoMiC.png" alt="MierCat" id="logoMC" class="row">
+        <!--Header | navigation-->
+        <div id="headnav">
+        
+            <nav class="sitenav">
+
+                <div class="row">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Galleries</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="http://mapyourtravel.herokuapp.com/explore">MapYourTravel</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!--Social Media-->
+        <div class="container">
+            <div id="social_media">
+                <ul>
+                    <!-- google-->
+                    <li><a href="#" class="fa fa-google"></a></li>
+                    <!--linkedin-->
+                    <li><a href="#" class="fa fa-linkedin"></a></li>
+                    <!--facebook-->
+                    <li><a href="https://www.facebook.com/mier1993" class="fa fa-facebook"></a></li>
+                    <!--instagram-->
+                    <li><a href="https://www.instagram.com/miercat523/" class="fa fa-instagram"></a></li>
+                </ul>
+
+                <!-- scroll to top button-->
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+            </div>
+        </div>
 
         <!--contact form-->
         <div class="contactForm">
@@ -50,8 +73,7 @@
                 <textarea name="message" rows="12" class="input" placeholder="Leave a message. Max: 200."></textarea><br>
                 <!--Submit-->
                 <br>
-                <input name="submitted" value="email" type="hidden">
-                <input name="submit" value="Post" type="submit">
+                <button type="button" class="btn btn-primary btn-lg">Submit</button>
             </form>
 
             <!--If the email is not valid:-->
@@ -68,18 +90,6 @@
 
         <!-- Form Ended -->
 
-        <footer>
-            <ul>
-                <li>MierCat</li>
-                <li>Follow Me</li>
-            </ul>
-            <ul>
-                <li><a href="https://www.facebook.com/mier1993">Facebook</a></li>
-                <li>Instagram: Miercat523</li>
-                <li>Wechat: Miercat3523</li>
-            </ul>
-
-        </footer>
     </div>
 </body>
 

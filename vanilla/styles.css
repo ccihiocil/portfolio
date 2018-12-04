@@ -1,3 +1,8 @@
+/* @include media-breakpoint-up(sm) { ... }
+@include media-breakpoint-up(md) { ... }
+@include media-breakpoint-up(lg) { ... }
+@include media-breakpoint-up(xl) { ... } */
+
 img {
     width: 70%;
     padding: 2%;
@@ -30,29 +35,36 @@ body {
     text-align: center;
 }
 
-.contactMessage .contactForm {
-    text-align: center;
-}
-
 input[type="text"],
 .input,
 .input2,
 .input3,
 .inputs {
-    background-color: ghostwhite;
+    background-color: lightgray;
     padding: 2px;
     border: 2px solid #888;
     color: darkgray;
     font-family: 'Lobster', cursive;
-    font-size: medium;
+    font-size: larger;
     margin: 0.3em;
 }
-
+/*the form as a whole*/
 .contactForm {
     clear: both;
-    font-family: 'Fredericka the Great', cursive;
-    font-size: large;
+    font-family: 'Playfair Display', serif;
+    font-size: larger;
     font-weight: lighter;
+    margin: 1% 20% 1% 20%;
+    text-align: center;
+    display: block;
+}
+/*Control the width of the text box*/
+.contactForm input, textarea {
+    width: 90%;
+}
+
+input[type="submit"]{
+    background-color: lightgray;
 }
 
 /* ================================= */
@@ -61,6 +73,7 @@ input[type="text"],
 #logoMC {
     width: 28em;
     float: left;
+    margin: auto;
 }
 
 .wrapper {
@@ -104,15 +117,6 @@ nav.sitenav a:active {
 nav.sitenav a:hover {
     border-bottom: thin solid whitesmoke;
 }
-
-h1,
-h2,
-h3,
-form,
-body {
-    text-align: center;
-}
-
 
 /* Typography */
 h1 {
